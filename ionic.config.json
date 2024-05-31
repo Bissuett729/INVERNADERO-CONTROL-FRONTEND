@@ -1,0 +1,7 @@
+{
+  "name": "INVERNADERO-CONTROL-FRONTEND",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
