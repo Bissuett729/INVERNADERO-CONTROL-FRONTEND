@@ -35,3 +35,16 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'remixicon/fonts/remixicon.css';
+
+
+.shadow-custom {
+    box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 25px -12px rgba(0, 0, 0, 0.75);
+}
