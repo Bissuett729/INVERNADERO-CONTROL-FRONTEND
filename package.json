@@ -26,6 +26,7 @@
     "@capacitor/core": "6.0.0",
     "@capacitor/haptics": "6.0.0",
     "@capacitor/keyboard": "6.0.0",
+    "@capacitor/live-updates": "^0.2.1",
     "@capacitor/status-bar": "6.0.0",
     "@ionic/angular": "^8.0.0",
     "ionicons": "^7.2.1",
