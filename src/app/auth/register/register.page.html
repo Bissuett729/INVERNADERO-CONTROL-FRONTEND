@@ -22,17 +22,17 @@
     <span class="border-[#ffffff66] border-b-2 w-full"></span>
   </div>
 
-  <form class="flex flex-col gap-4 w-full">
+  <form [formGroup]="registerForm" class="flex flex-col gap-4 w-full">
     <div class="px-2 py-4 rounded-lg bg-[#f5f9fe4d] w-full">
-      <input type="text" class="px-2 w-full outline-none border-none bg-transparent text-white placeholder:text-white" placeholder="Nombre">
+      <input formControlName="name" type="text" class="px-2 w-full outline-none border-none bg-transparent text-white placeholder:text-white" placeholder="Nombre">
     </div>
 
     <div class="px-2 py-4 rounded-lg bg-[#f5f9fe4d] w-full">
-      <input type="text" class="px-2 w-full outline-none border-none bg-transparent text-white placeholder:text-white" placeholder="Correo electronico">
+      <input formControlName="email" type="text" class="px-2 w-full outline-none border-none bg-transparent text-white placeholder:text-white" placeholder="Correo electronico">
     </div>
 
     <div class="px-2 py-4 rounded-lg bg-[#f5f9fe4d] w-full">
-      <input type="password" class="px-2 w-full outline-none border-none bg-transparent text-white placeholder:text-white" placeholder="Contraseña">
+      <input formControlName="password" type="password" class="px-2 w-full outline-none border-none bg-transparent text-white placeholder:text-white" placeholder="Contraseña">
     </div>
 
     <div class="flex items-center gap-4">
@@ -40,7 +40,7 @@
       <label for="terms" class="text-start font-light text-white">Estoy de acuerdo con las <b class="text-[#009c51]">condiciones de servicio</b> y <b class="text-[#009c51]">políticas de privacidad</b></label>
     </div>
 
-    <button class="py-4 px-4 text-lg rounded-lg bg-[#085652] active:top-[1px] relative text-white">Crear Cuenta</button>
+    <button [disabled]="registerForm.invalid" (click)="registerUser()" class="py-4 px-4 text-lg rounded-lg bg-[#085652] active:top-[1px] relative text-white">Crear Cuenta</button>
     <a routerLink="/greenhouse/auth/login" class="font-light text-white">Ya tiene una cuenta? <b class="text-[#009c51]">Inicia sesion</b></a>
   </form>
   

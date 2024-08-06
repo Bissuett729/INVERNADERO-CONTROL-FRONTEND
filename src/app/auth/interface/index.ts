@@ -1,0 +1,1 @@
+export { USER_RESPONSE_INTERFACE } from './userResponse.interface'
