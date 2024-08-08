@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 
 
@@ -15,7 +15,8 @@ import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonTitle, Io
     IonButtons,
     IonMenuButton,
     RouterOutlet,
-    RouterModule
+    RouterModule,
+    RouterLink
   ],
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],

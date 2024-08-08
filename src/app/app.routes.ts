@@ -8,7 +8,24 @@ export const routes: Routes = [
 
   { path: 'greenhouse', loadComponent: () => import('./layout/layout.component').then(m => m.LayoutComponent), children: [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', loadComponent: () => import('./layout/pages/home/home.component').then(m=>m.HomeComponent) }
+    { 
+      path: 'home', 
+      loadComponent: () => import('./layout/pages/home/home.page').then(m=>m.HomePage) },
+    {
+      path: 'users',
+      loadComponent: () => import('./layout/pages/users/users.page').then( m => m.UsersPage)
+    },
+    {
+      path: 'sensors',
+      loadComponent: () => import('./layout/pages/sensors/sensors.page').then( m => m.SensorsPage)
+    },
+    {
+      path: 'settings',
+      loadComponent: () => import('./layout/pages/settings/settings.page').then( m => m.SettingsPage)
+    },
+    {
+      path: 'home',
+      loadComponent: () => import('./layout/pages/home/home.page').then( m => m.HomePage)
+    },
   ] },
-
 ];
