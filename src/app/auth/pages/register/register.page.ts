@@ -5,9 +5,9 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 import { RouterLink } from '@angular/router';
 
 // SERVICES
-import * as SERVICE from '../../shared/services'
+import * as SERVICE from '../../../shared/services'
 // INTERFACES
-import * as I from '../interface'
+import * as I from '../../interfaces'
 
 @Component({
   selector: 'app-register',

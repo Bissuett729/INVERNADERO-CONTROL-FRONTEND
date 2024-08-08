@@ -1,41 +1,11 @@
-<section class="h-full w-full flex flex-col gap-8 px-5">
+<section class="h-full w-full flex flex-col gap-8 px-5 overflow-y-auto">
 
   <section class="w-full bg-[#5A8987] text-white text-center py-2 px-5 rounded-lg">
     <span>Usuarios registrados</span>
   </section>
 
   <section class="grid grid-cols-2 gap-4">
-    <div class="our-team col-span-1 shadow-button bg-gradient-to-b from-[#ffffff] to-[#014946]">
-      <div class="picture">
-        <img class="h-full w-full object-cover" src="../../../../assets/images/miguelbissuett.jpeg">
-      </div>
-      <div class="flex flex-col gap-2">
-        <h3 class="text-white text-xl">Miguel Bissuett</h3>
-        <h4 class="text-white">Administrador</h4>
-      </div>
-    </div>
-  
-    <div class="our-team col-span-1 shadow-button bg-gradient-to-b from-[#ffffff] to-[#014946]">
-      <div class="picture">
-        <img class="h-full w-full object-cover" src="../../../../assets/images/miguelbissuett.jpeg">
-      </div>
-      <div class="flex flex-col gap-2">
-        <h3 class="text-white text-xl">Miguel Bissuett</h3>
-        <h4 class="text-white">Administrador</h4>
-      </div>
-    </div>
-  
-    <div class="our-team col-span-1 shadow-button bg-gradient-to-b from-[#ffffff] to-[#014946]">
-      <div class="picture">
-        <img class="h-full w-full object-cover" src="../../../../assets/images/miguelbissuett.jpeg">
-      </div>
-      <div class="flex flex-col gap-2">
-        <h3 class="text-white text-xl">Miguel Bissuett</h3>
-        <h4 class="text-white">Administrador</h4>
-      </div>
-    </div>
-  
-    <div class="our-team col-span-1 shadow-button bg-gradient-to-b from-[#ffffff] to-[#014946]">
+    <div *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]" class="our-team p-4 flex flex-col gap-2 col-span-1 shadow-button bg-gradient-to-b from-[#ffffff] to-[#014946]">
       <div class="picture">
         <img class="h-full w-full object-cover" src="../../../../assets/images/miguelbissuett.jpeg">
       </div>
