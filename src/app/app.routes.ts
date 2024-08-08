@@ -28,4 +28,20 @@ export const routes: Routes = [
       loadComponent: () => import('./layout/pages/home/home.page').then( m => m.HomePage)
     },
   ] },
+  {
+    path: 'sensores-humedad',
+    loadComponent: () => import('./layout/pages/home/sensores-humedad/sensores-humedad.page').then( m => m.SensoresHumedadPage)
+  },
+  {
+    path: 'ventiladores',
+    loadComponent: () => import('./layout/pages/home/ventiladores/ventiladores.page').then( m => m.VentiladoresPage)
+  },
+  {
+    path: 'iluminacion',
+    loadComponent: () => import('./layout/pages/home/iluminacion/iluminacion.page').then( m => m.IluminacionPage)
+  },
+  {
+    path: 'sistema-riego',
+    loadComponent: () => import('./layout/pages/home/sistema-riego/sistema-riego.page').then( m => m.SistemaRiegoPage)
+  },
 ];
