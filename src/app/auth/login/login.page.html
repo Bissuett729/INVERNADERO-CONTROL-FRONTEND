@@ -32,8 +32,8 @@
     </div>
 
     <a routerLink="/greenhouse/auth/forgot-password" class="text-end text-white">Olvidaste tu contraseña?</a>
-
-    <button (click)="authentication()" [disabled]="authForm.invalid" class="py-4 px-4 text-lg rounded-lg text-white disabled:text-[#9c9c9c] bg-[#085652] active:top-[1px] relative disabled:bg-[#00000021]">Iniciar sesi&oacute;n</button>
+<!-- (click)="authentication()" [disabled]="authForm.invalid" -->
+    <button routerLink="/greenhouse/home"  class="py-4 px-4 text-lg rounded-lg text-white disabled:text-[#9c9c9c] bg-[#085652] active:top-[1px] relative disabled:bg-[#00000021]">Iniciar sesi&oacute;n</button>
     <a routerLink="/greenhouse/auth/register" class="font-light text-white">No tienes cuenta? <b class="text-[#009c51]">registrate aqui.</b></a>
   </form>
   
